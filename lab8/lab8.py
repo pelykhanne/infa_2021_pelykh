@@ -199,5 +199,5 @@ while not finished:
             target.hit()
             target.new_target()
     gun.power_up()
-print(self.points)
+print(target.points)
 pygame.quit()
