@@ -60,6 +60,7 @@ def move():
         elif ball['y'] > HEIGHT - ball['r']:
             ball['vy'] = -abs(ball['vy'])
 
+
 def process_click(pos):
     global score
     for ball in balls:
@@ -72,6 +73,7 @@ def process_click(pos):
 def draw_score(score):
     surface = font.render("Your score: " + str(score), False, BLACK)
     screen.blit(surface, (0, 0))
+
 
 pygame.init()
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
